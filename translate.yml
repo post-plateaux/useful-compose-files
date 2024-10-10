@@ -15,9 +15,13 @@ volumes:
   libretranslate_models: {}
 
 
-  
-
 # Name this file 'docker-compose.yml'
+#
+# IMPORTANT!!! This compose file is configured to download ALL the language models (because why the fuck not? More languages=more cool),
+# and you will not be able to access the service until this process has completed. Depending on your internet speed, this process can
+# take a significant amount of time. DO NOT FRET! Instead of assuming the process has failed, go to the summary page for this container
+# in proxmox, and scroll down to look at the container's network traffic graph; if the line is still elevated, be patient. This download
+# process will only happen once.
 #
 # If you don't understand something, just copy and paste this entire file into an LLM; these comments will serve as the prompt.
 #

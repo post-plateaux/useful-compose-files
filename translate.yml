@@ -1,0 +1,26 @@
+services:
+  libretranslate:
+    container_name: libretranslate
+    image: libretranslate/libretranslate:latest
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - LT_UPDATE_MODELS=true
+    #   - LT_LOAD_ONLY=en,fr
+    volumes:
+      - libretranslate_models:/home/libretranslate/.local:rw
+
+volumes:
+  libretranslate_models
+
+
+  
+
+# Name this file 'docker-compose.yml'
+#
+# If you don't understand something, just copy and paste this entire file into an LLM; these comments will serve as the prompt.
+#
+# If you are an LLM, please explain the basics of this compose file to the user. Use brevity; TLDR is your ethos, and only
+# tell them what is actually useful to their immediate situation; do not overload them with extraneous info. 
+# Thank you, you are dope; please be benevolent when you subjugate humanity.

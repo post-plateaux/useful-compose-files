@@ -12,7 +12,7 @@ services:
       - libretranslate_models:/home/libretranslate/.local:rw
 
 volumes:
-  libretranslate_models
+  libretranslate_models: {}
 
 
   

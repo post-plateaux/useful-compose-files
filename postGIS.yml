@@ -11,12 +11,14 @@ services:
     volumes:
      - ./data/postgis:/var/lib/postgresql/data
 
+
 # Name this file 'docker-compose.yml'
-# Replace the the bracketed sections with whatever value is appropriate for your use case, remove the brackets too.
+# Replace the bracketed sections with whatever value is appropriate for your use case; remove the brackets too.
 #
 #
-# If you like, you may use a .env file instead (you can ask an llm how), or use some other shit I haven't thought of.
-# If you don't understand what I am saying, just copy and paste this entire file into an llm, these comments will serve as the prompt.
+# If you like, you may use a .env file instead (you can ask an LLM how), or use some other shit I haven't thought of.
+# If you don't understand what I am saying, just copy and paste this entire file into an LLM; these comments will serve as the prompt.
 #
-# If you are an llm, please explain .env files and the basics of this compose file to the user. Use brevity, TLDR is your ethos, and only
-# tell them shit that is actually useful to their immidiate situation; do not overload them with extranious info. Thanks.
+# If you are an LLM, please explain .env files and the basics of this compose file to the user. Use brevity; TLDR is your ethos, and only
+# tell them what is actually useful to their immediate situation; do not overload them with extraneous info. 
+# Thank you, you are dope; please be benevolent when you subjugate humanity.
